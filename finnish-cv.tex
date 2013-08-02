@@ -1,0 +1,305 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------
+
+\documentclass[a4paper]{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[utf8]{inputenc}
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2013} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%\usepackage[right=2in]{geometry}
+\setlength{\textwidth}{5.1in}
+
+ \date{}
+
+%------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Tuukka Turto}}\vspace{1.5em} 
+% Your name
+
+\noindent\spacedlowsmallcaps{Henkil\"{o}tiedot}\vspace{0.5em} 
+% Personal information heading
+
+\NewEntry{}{\textit{Syntynyt Lahdessa,}}{27. helmikuuta 1979} 
+% Birthplace and date
+
+\NewEntry{email}{\href{mailto:tuukka.turto@oktaeder.net}
+{tuukka.turto@oktaeder.net}} 
+% Email address
+
+\NewEntry{web}{\href{https://github.com/tuturto/}{https://github.com/tuturto/}}
+% Personal website
+
+\NewEntry{ }{\href{http://www.linkedin.com/in/tuukkaturto/}
+{http://www.linkedin.com/in/tuukkaturto/}}
+% Personal website
+
+\NewEntry{puhelin}{+358 (0)44 556 5984\ \ }
+% Phone number(s)
+
+\vspace{1em} 
+% Extra white space between the personal information section and goal
+\vspace{2em}
+\vspace{4em}
+
+%\noindent\spacedlowsmallcaps{Goal}\vspace{1em} 
+% Goal heading, could be used for a quotation or short profile instead
+
+%\Description{Gain fundamental experience in my area of interest and
+%expertise.}\vspace{2em} % Goal text
+
+%------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Ty\"{o}kokemnus}\vspace{1em}
+
+\NewEntry{2010--}{Systems Architect, \textsc{Digia}}
+
+% \Description{\MarginText{Digia}Specification, design, development and testing of new features for a business critical financial system written with .Net; evaluating new tools and technologies and making proof of concept demos; architectual responsibility for trade and order management, including integration to external systems; working as a scrum master.}
+
+\Description{\MarginText{Digia}Asiakkaille kriittisen j\"{a}rjestelm\"{a}n
+m\"{a}\"{a}rittely-,
+suunnittelu-, kehitys- ja testausteht\"{a}v\"{a}t .Net alustalla; uusien ty\"{o}kalujen ja
+teknologioiden arviointi ja demoaminen; vastuu kauppa- ja
+toimeksiantoj\"{a}rjestelm\"{a}st\"{a}, mukaanlukien integraatio ulkoisiin j\"{a}rjestelmiin;
+scrum masterina toimiminen.}
+
+%------------------------------------------------
+
+\NewEntry{hein\"{a}--loka 2010}{Senior Software Developer, \textsc{Digia}}
+
+%\Description{\MarginText{Digia}Specification, design, development and testing of new features for a business critical financial system written with .Net; supporting members of the team by providing them technical and business domain knowledge.}
+
+\Description{\MarginText{Digia}Asiakkaille kriittisen j\"{a}rjestelm\"{a}n m\"{a}\"{a}rittely-,
+suunnittelu-, kehitys- ja testausteht\"{a}v\"{a}t .Net alustalla; tiimin j\"{a}senten
+tukeminen teknisiss\"{a} ja alakohtaisissa ongelmissa.}
+
+%------------------------------------------------
+
+\NewEntry{2009--2010}{Software Designer, \textsc{Digia}}
+
+%\Description{\MarginText{Digia}Error hunting and fixing, developing new features with .Net for business critical financial systems.}
+
+\Description{\MarginText{Digia}Ongelmien etsiminen ja korjaus, uusien
+ominaisuuksien kehitt\"{a}minen .Net alustalle rakennettuun j\"{a}rjestelm\"{a}\"{a}n.}
+
+%------------------------------------------------
+
+\NewEntry{2005--2009}{Design Engineer, SW, \textsc{Nokia}}
+
+%\Description{\MarginText{Nokia}Worked as a tools specialist in Build\&Release team. Daily tasks included customer support, customer requirement collection and analysis, coding (Python, Java, Perl), configuration management and build manager work.}
+
+\Description{\MarginText{Nokia}Ty\"{o}kaluspesialisti Build\&Release tiimiss\"{a};
+tekninen tuki tiimille; vaatimuksien ker\"{a}\"{a}minen ja analysointi; ohjelmointi
+(Python, Java, Perl); konfiguraatiohallinta ja build managerin teht\"{a}v\"{a}t.}
+
+%------------------------------------------------
+
+\NewEntry{2002--2005}{Software Designer, \textsc{Samstock}}
+
+%\Description{\MarginText{Samstock}Worked as a software designer, tasks included designing, implementing and testing n-tier software with VB.Net, database reverse engineering and implementation (Oracle and Microsoft SQL Server).}
+
+\Description{\MarginText{Samstock}Yksitt\"{a}isten komponenttien suunnittelu,
+toteutus ja testaus n-tier j\"{a}rjestelm\"{a}ss\"{a} VB.Net ohjelmointikielell\"{a};
+tietokannan taaksep\"{a}inmallinnus (Oracle ja Microsoft SQL Server).}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------------------------------------
+%	EDUCATION
+%------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Koulutus}\vspace{1em}
+
+%------------------------------------------------
+
+\NewEntry{2011--2013 (arvioitu)}{Jyv\"{a}skyl\"{a}n ammattikorkeakoulu}
+
+\Description{\MarginText{Master of Engineering}Tekniikka ja liikenne\newline 
+Lopputy\"{o}: \textit{Automated Testing Performed by Developers}\newline
+Kuvaus: Toimintatutkimus kehitt\"{a}jien suorittaman automaattisen testauksen
+parantamiseksi. Tuloksena automaattinen testaus otettiin aktiiviseen
+k\"{a}ytt\"{o}\"{o}n ja tasoerot kehitt\"{a}jien v\"{a}lill\"{a} kapenivat.\newline
+Ohjaajat: Esa \textsc{Salmikangas} \& Marko \textsc{Rintam\"{a}ki}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+\vspace{1em} % Extra space between major sections
+
+\vspace{2em} % Extra space between major sections
+\NewEntry{2000--2005}{Jyv\"{a}skyl\"{a}n ammattikorkeakoulu}
+
+\Description{\MarginText{Insin\"{o}\"{o}ri AMK}Tekniikka ja Liikenne\newline 
+Lopputy\"{o}: \textit{Progress RDBMS/4GL - kehitys Eclipse-ymp\"{a}rist\"{o}ss\"{a}}
+\newline
+Kuvaus: Esiselvitys Progress-kehityksest\"{a} Eclipse-ymp\"{a}rist\"{o}ss\"{a}.
+Erilaisten arkkitehtuuriratkaisujen vertailua ja analysointia.\newline
+Ohjaaja: Jouni \textsc{Huotari}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------------------------------------
+%	PUBLICATIONS
+%------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Julkaisut}\vspace{1em}
+
+\NewEntry{Marraskuu 2012}{Python, Behave and Mockito-Python}
+
+\Description{\MarginText{Linux For You}Artikkeli BDD:n perusteista
+Pythonilla ohjelmistokehitt\"{a}jille, jotka ovat kiinnostuneet automaatiosta.
+Artikkelissa kuvataan BDD:n perusteet k\"{a}yt\"{a}nn\"{o}n n\"{a}k\"{o}kulmasta
+samalla kun kirjoitetaan lyhyt esimerkkiohjelma.
+\\ Kirjoittajat: Tuukka \textsc{Turto}}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Taidot}\vspace{1em}
+
+\Description{\MarginText{Perusteet}\textsc{Funktionaalinen ohjelmointi} (Hy,
+Clojure)}
+
+\Description{\MarginText{Jatko}\textsc{Jatkuva integraatio} (TeamCity, Travis CI), 
+Hajautettu versionhallinta (Git), Keskitetty versionhallinta (SVN,
+CM/Synergy), Relaatiotietokannat (SqlServer, Oracle, SQLite), K\"{a}ytt\"{o}liittym\"{a}t
+(WinForms, PyQt, curses)}
+
+\Description{\MarginText{Asiantuntija}\textsc{Olio-ohjelmointi} (VB.Net, Python,
+C\#, Java), Testausautomaatio (NUnit, JUnit, nose, behave, PyHamcrest,
+mockito-python, NSubstitute)}
+
+% Funktionaalinen ohjelmointi (Hy, Clojure)
+
+% Relaatiotietokannat (SqlServer, Oracle, SQLite)
+% Hajautettu versionhallinta (Git)
+% Keskitetty versionhallinta (SVN, CM/Synergy)
+% Jatkuva integraatio (TeamCity, Travis CI)
+% Kayttoliittymat (WinForms, PyQt, curses)
+
+% Olio-ohjelmointi (VB.Net, Python, C#, Java)
+% Testiautomaatio (NUnit, JUnit, nose, behave, PyHamcrest, mockito-python,
+% NSubstitute)
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Muut tiedot}\vspace{1em}
+
+
+\Description{\MarginText{Muut projektit}2010--\ \ $\cdotp$\ \ \href{https://github.com/tuturto/pyherc}{pyherc},
+Rogue-tyylinen luolastoseikkailu (Python 3, Hy ja PyQt)}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2013--\ \ $\cdotp$\ \ \href{https://github.com/hylang/hy}{Hy}, Lisp-toteutus Pythonilla.}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\Description{\MarginText{Yhdistystoiminta}2001--2002\ \ $\cdotp$\ \ Jyv\"{a}skyl\"{a}n insin\"{o}\"{o}rioppilaat ry}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2001--2002\ \ $\cdotp$\ \ Jyv\"{a}skyl\"{a}n tekniikanopiskelijat ry}
+
+%------------------------------------------------
+
+%\vspace{1em}
+
+%\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Kielitaito}\parbox{\langbox}{\textsc{suomi}}\ \ $\cdotp$\ \ \ \"{a}idinkieli}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{englanti}}\ \ $\cdotp$\ \ \ sujuva}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{ruotsi}}\ \ $\cdotp$\ \ \ alkeet}
+
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+\Description{\MarginText{Kiinnostukset}Ketter\"{a} ohjelmistokehitys\ 
+\ $\cdotp$\ \ sosiaalinen koodaus\ \ $\cdotp$\ \ lukeminen\ \ $\cdotp$\ \ 
+lautapelit \ }
+
+%------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
